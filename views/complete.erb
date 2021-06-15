@@ -44,32 +44,32 @@
         <h2 class="mt-4 pb-4">送信内容</h2>
         
         <div class="mb-3 row border-bottom">
-            <label class="col-sm-3">会社名</label>
-            <div class="offset-sm-2 col-sm-7">
+            <label class="col-3">会社名</label>
+            <div class="offset-2 col-7">
                 <% company = params['company'] %>
                 <%= company %>
             </div>
         </div>
         
         <div class="mb-3 row border-bottom">
-            <label class="col-sm-3">氏名</label>
-            <div class="offset-sm-2 col-sm-7">
+            <label class="col-3">氏名</label>
+            <div class="offset-2 col-7">
                 <% name = params['name'] %>
                 <%= name %>
             </div>
         </div>
         
         <div class="mb-3 row border-bottom">
-            <label class="col-sm-3">メール</label>
-            <div class="offset-sm-2 col-sm-7">
+            <label class="col-3">メール</label>
+            <div class="offset-2 col-7">
                 <% mail = params['mail'] %>
                 <%= mail %>
             </div>
         </div>
         
         <div class="mb-3 row border-bottom">
-            <label class="col-sm-3">電話番号</label>
-            <div class="offset-sm-2 col-sm-7">
+            <label class="col-3">電話番号</label>
+            <div class="offset-2 col-7">
                 <% tel = params['tel'] %>
                 <%= tel %>
             </div>
@@ -77,8 +77,8 @@
         
         <!-- テキストエリアを改行させる -->
         <div class="mb-3 row border-bottom">
-            <label class="col-sm-3">内容</label>
-            <div class="offset-sm-2 col-sm-7">
+            <label class="col-3">内容</label>
+            <div class="offset-2 col-7">
                 <% content = params['content'] %>
                 <%= content.gsub(/\r\n|\r|\n/, '<br>') %>
             </div>
