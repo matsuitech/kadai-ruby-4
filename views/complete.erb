@@ -80,7 +80,7 @@
             <label class="col-sm-3">内容</label>
             <div class="offset-sm-2 col-sm-7">
                 <% content = params['content'] %>
-                <%= content.gsub(/\n/, '<br>') %>
+                <%= content.gsub(/\r\n|\r|\n/, '<br>') %>
             </div>
         </div>
         
